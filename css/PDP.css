@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  overflow: auto;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 20px 100px;
+  box-sizing: border-box;
+}
+
+nav .logo {
+  font-family: Limelight;
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: normal;
+}
+
+nav ul {
+  display: flex;
+  list-style: none; /* menghilangkan bullet pada nav*/
+  justify-content: flex-end; /* memberi jarak antar menu */
+  width: 40%;
+}
+
+nav ul li {
+  padding-right: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: bolder;
+  color: rgb(1, 68, 122);
+}
+
+.productdetail {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftsectionproduct img {
+  display: flex;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.rightsectionproduct {
+  width: 50%;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.rightsectionproduct h3 {
+  padding: 50px 0 20px 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.rightsectionproduct input {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.rightsectionproduct button {
+  height: 40px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #05407e;
+  color: white;
+  cursor: pointer;
+}
+
+.rightsectionproduct h4 {
+  padding: 20px 0;
+}
+.rightsectionproduct span {
+  line-height: 25px;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}

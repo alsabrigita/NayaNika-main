@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NayaNika</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/icon" href="image/favicon.jpg">
+    <link rel="stylesheet" href="css/account-page.css">
+    
+  
+  </head>
+  <body>
+    <main>
+        <!-- Logo -->
+        <div class="logo">
+          <p>NayaNika</p>
+        </div>
+  
+      <!--Login & Register Form-->
+      <section class="login-register">
+          <div id='login-form'class='login-page'>
+            <div class="form-box">
+              <div class='button-box'>
+                  <div id='btn'></div>
+                  <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                  <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+              </div>
+              <form id='login' class='input-group-login'>
+                <input type='email'class='input-field'placeholder='Email' required >
+                <input type='password'class='input-field'placeholder='Password' required>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                <button type='submit'class='submit-btn'>Log in</button>
+              </form>
+              <form id='register' class='input-group-register'>
+                <input type='text'class='input-field'placeholder='Full Name' required>
+                <input type='email'class='input-field'placeholder='Email' required>
+                <input type='password'class='input-field'placeholder='Password' required>
+                <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+              </form>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Group 2 - Tim A - Section Palembang RevoU</p>
+    </footer>
+    <script src="js/account-page.js"></script>
+  </body>
+</html> 
