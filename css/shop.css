@@ -51,7 +51,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   height: 300px;
-  background-image: url("../assets/img/Tenun.png");
+  background-image: url("../assets/img/Motif Tenun.jpg");
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -60,13 +60,13 @@ nav ul li a {
 }
 
 .bigherotext {
-  color: whitesmoke;
+  color: white;
   font-family: Titan One;
   font-size: 80px;
 }
 
 .smallherotext {
-  color: whitesmoke;
+  color: white;
   font-family: Montserrat;
   font-size: 30px;
   font-weight: bold;
@@ -121,9 +121,10 @@ button i {
   margin-top: 51px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
@@ -132,20 +133,33 @@ button i {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* width: 220px;
+  height: 320px; */
+  /* align-items: center;
+  justify-content: center; */
+  transition: all 0.2s ease;
 }
 
+.card:hover{
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
+}
 .cardimg {
   max-width: 100%;
   height: auto;
 }
-.cardname {
-  font-size: 20px;
+.cardimg img{
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
 }
-
+.cardname {
+  font-size: 16px;
+}
+.cardtext p{
+  flex-wrap: wrap;
+}
 .cardprice {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 800;
 }
 

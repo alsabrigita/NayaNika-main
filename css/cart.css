@@ -47,7 +47,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   height: 300px;
-  background-color: rgb(4, 62, 112);
+  background-color: whitesmoke;
   /* background-image: url("./img/hero.jpg"); */
   /* background-size: cover; */
   align-items: center;
@@ -57,9 +57,12 @@ nav ul li a {
 }
 
 .bigherotext {
-  color: white;
-  font-family: Titan One;
-  font-size: 80px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: left;
+  box-shadow: #969696;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .smallherotext {
@@ -167,15 +170,6 @@ nav ul li a {
   cursor: pointer;
 }*/
 
-footer {
-  display: flex;
-  background-color: black;
-  color: white;
-  height: 80px;
-  justify-content: center;
-  padding-top: 20px;
-  box-sizing: border-box;
-}
 /*cart*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body{
@@ -195,26 +189,35 @@ body{
   width: 80px;
   height: 80px
 }
-.itemside .info{
+.itemside{
+
+}
+.info{
   padding-left: 15px;
-  padding-right: 7px
+  padding-right: 7px;
+  padding-bottom:50px;
+  text-decoration: none !important;
+  font-style: normal;
 }
 .table-shopping-cart{
 
 }
 .price-wrap{
-  line-height: 1.2
+  line-height: 1.2;
 }
+
 .table-shopping-cart .price{
   font-weight: bold;
   margin-right: 5px;
-  display: block
+  display: block;
 }
 .text-muted{
-  color: #969696 !important
+  color: #969696 !important;
+ 
 }
-a{
-  text-decoration: none !important
+.a{
+  padding-top: 50px;
+  text-decoration: none;
 }
 .card{
   position: relative;display: -ms-flexbox;
@@ -240,17 +243,25 @@ a{
 }
 [class*="dlist-"]
 {margin-bottom: 5px}
+
 .coupon{
-  border-radius: 1px
+  border-radius: 1px;
 }
+
 .price{
   font-weight: 600;
-  color: #212529
+  color: #212529;
+  padding-block: 30px;
+  font-style: normal;
 }
+
 .btn.btn-out{
   outline: 1px solid #fff;
-  outline-offset: -5px
+  outline-offset: -5px;
+  background-color: rgb(0, 0, 0);
+  border-color: #969696;
 }
+
 .btn-main{
   border-radius: 2px;
   text-transform: capitalize;
@@ -259,15 +270,31 @@ a{
   color: #fff;
   width: 100%
 }
+
 .btn-light{
   color: #ffffff;
   background-color: #F44336;
   border-color: #f8f9fa;
   font-size: 12px
-}.btn-light:hover{
+
+}
+.btn-light:hover{
   color: #ffffff;
   background-color: #F44336;
   border-color: #F44336;
-}.btn-apply{
-  font-size: 11px
+}
+
+.btn-apply{
+  font-size: 11px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
