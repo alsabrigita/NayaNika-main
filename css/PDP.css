@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,600;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -45,30 +47,36 @@ nav ul li a {
 
 .active {
   font-weight: bolder;
-  color: rgb(1, 68, 122);
+  color: black;
 }
 
 .productdetail {
   display: flex;
   flex-direction: row;
+  margin: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .leftsectionproduct img {
   display: flex;
-  padding: 100px;
   box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+
 }
 
 .rightsectionproduct {
   width: 50%;
-  padding-top: 100px;
   box-sizing: border-box;
 }
 
 .rightsectionproduct h3 {
-  padding: 50px 0 20px 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   font-size: 30px;
 }
 
@@ -86,16 +94,19 @@ nav ul li a {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  background-color: #05407e;
+  background-color: black;
   color: white;
   cursor: pointer;
 }
 
 .rightsectionproduct h4 {
   padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
 }
-.rightsectionproduct span {
+.rightsectionproduct p{
   line-height: 25px;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer {
