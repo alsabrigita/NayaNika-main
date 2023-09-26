@@ -7,7 +7,7 @@ if(document.cookie.indexOf(',counter=')>=0)
 }
 
 
-let cartContainer = document.getElementById('container-fluid')
+let containerfluid = document.getElementById('container-fluid')
 
 let boxContainerDiv = document.createElement('div')
 boxContainerDiv.id = 'boxContainer'
@@ -37,13 +37,13 @@ function dynamicCartSection(ob,itemCounter)
     // console.log(boxContainerDiv);
 
     buttonLink.appendChild(buttonText)
-    cartContainer.appendChild(boxContainerDiv)
-    cartContainer.appendChild(totalContainerDiv)
+    containerfluid.appendChild(boxContainerDiv)
+    containerfluid.appendChild(totalContainerDiv)
     // let cartMain = document.createElement('div')
     // cartmain.id = 'cartMainContainer'
     // cartMain.appendChild(totalContainerDiv)
 
-    return cartContainer
+    return containerfluid
 }
 
 let totalContainerDiv = document.createElement('div')

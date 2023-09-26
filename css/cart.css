@@ -201,6 +201,9 @@ body{
   text-decoration: none !important;
   font-style: normal;
 }
+.info a {
+  text-decoration: none;
+}
 .table-shopping-cart{
 
 }
@@ -222,22 +225,24 @@ body{
   text-decoration: none;
 }
 .card{
-  position: relative;display: -ms-flexbox;
+  position: relative;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: white;
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: 0px
 }
 .itemside{
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;width: 100%
+  display: block;
+  display: flexbox;
+  display: flex;
+  width: 100%;
 }
 .dlist-align{
   display: -webkit-box;
