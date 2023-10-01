@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Kirim produk ke keranjang belanja
         var product = {
-            name: 'NayaNika Wallet',
-            price: 200000,
+            name: 'Tas Anyam',
+            price: 32000,
             quantity: quantity
         };
 
