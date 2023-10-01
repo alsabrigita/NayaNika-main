@@ -273,7 +273,8 @@ body{
   border-radius: 2px;
   text-transform: capitalize;
   font-size: 15px;
-  padding: 10px 19px;cursor: pointer;
+  padding: 10px 19px;
+  cursor: pointer;
   color: #fff;
   width: 100%
 }
@@ -293,6 +294,15 @@ body{
 
 .btn-apply{
   font-size: 11px;
+}
+.custom-select{
+  border-color: grey;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  box-sizing: border-box;
+  border-color: lightgray;
 }
 
 /*FOOTER*/
