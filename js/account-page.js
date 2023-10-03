@@ -22,21 +22,28 @@ function login() {
     btn.style.left = '110px';
   }
   
-  function togglePassword() {
-    var passwordField = document.getElementById('password');
-    var toggleIcon = document.getElementById('toggle-icon');
+  
 
-    //Memungkinkan pengguna melihat/menyembunyikan kata sandi
-    if (passwordField.type === 'password') {
-      passwordField.type = 'text';
-      toggleIcon.classList.add('fa-eye-slash');
-      toggleIcon.classList.remove('fa-eye');
-    } else {
-      passwordField.type = 'password';
-      toggleIcon.classList.add('fa-eye');
-      toggleIcon.classList.remove('fa-eye-slash');
-    }
-  }
+ 
+    function togglePassword() {
+        var passwordField = document.getElementById('password');
+        var toggleIcon = document.getElementById('toggle-icon');
+        
+        // Memungkinkan pengguna melihat/menyembunyikan kata sandi
+        if (passwordField.type === 'password') {
+          passwordField.type = 'text';
+          toggleIcon.classList.remove('fa-eye-slash');
+          toggleIcon.classList.add('fa-eye');
+          console.log('Halo');
+        } else {
+          passwordField.type = 'password';
+          toggleIcon.classList.remove('fa-eye');
+          toggleIcon.classList.add('fa-eye-slash');
+        }
+      }
+      
+    
+  
   
  
   

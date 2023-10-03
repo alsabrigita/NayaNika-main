@@ -7,6 +7,12 @@
     <!--FAVICON-->
     <link rel="icon" type="image/icon" href="image/favicon.jpg">
     <link rel="stylesheet" href="css/account-page.css">
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     
   
   </head>
@@ -28,10 +34,10 @@
               </div>
               <form id='login' class='input-group-login'>
                 <input type='email'class='input-field'placeholder='Email' required >
-                <input type='password' id="password" class='input-field'placeholder='Password' required>
-                <span class="toggle-password" onclick="togglePassword()"> 
-                  <i id="toggle-icon" class="fa fa-eye"></i>
-                </span>
+                <div class="toggle-password" >
+                  <input type='password' id="password" class='input-field' placeholder='Password' required>
+                  <i id="toggle-icon" class="fa fa-eye-slash" onclick="togglePassword()"></i>
+                </div>
                 <input type='checkbox'class='check-box'><span>Remember Password</span>
                 <button type='submit'class='submit-btn'>Log in</button>
               </form>

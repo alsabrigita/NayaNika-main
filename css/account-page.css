@@ -124,6 +124,7 @@ main{
 {
 	margin: 30px 10px 32px 0;
 }
+
 span
 {
 	color:#777;
@@ -144,10 +145,49 @@ span
 	font-size:12px;
 	font-family: 'Lato', sans-serif;
 }
+
+.toggle-password {
+	position: relative;
+  }
+  
+.input-field {
+	width: calc(100% - 30px); /* Agar input field tidak tertutup oleh ikon */
+	padding-right: 30px; /* Menyisakan ruang untuk ikon di sebelah kanan */
+}
+  
+.fa-eye-slash {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	padding-bottom: 15px;
+	color: #777;
+}
+  
+.fa-eye{
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	padding-bottom: 15px;
+	color: #777;
+}
+
+#toggle-icon{
+	float: right;
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: 7px;
+	cursor: pointer;
+}
+
 #register
 {
 	left:450px;
 }
+
 #register input
 {
 	color:black;
