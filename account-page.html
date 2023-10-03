@@ -28,7 +28,10 @@
               </div>
               <form id='login' class='input-group-login'>
                 <input type='email'class='input-field'placeholder='Email' required >
-                <input type='password'class='input-field'placeholder='Password' required>
+                <input type='password' id="password" class='input-field'placeholder='Password' required>
+                <span class="toggle-password" onclick="togglePassword()"> 
+                  <i id="toggle-icon" class="fa fa-eye"></i>
+                </span>
                 <input type='checkbox'class='check-box'><span>Remember Password</span>
                 <button type='submit'class='submit-btn'>Log in</button>
               </form>
