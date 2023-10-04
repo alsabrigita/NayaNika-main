@@ -24,10 +24,29 @@ function login() {
   
   
 
- 
+ //Password di Login
     function togglePassword() {
         var passwordField = document.getElementById('password');
         var toggleIcon = document.getElementById('toggle-icon');
+        
+        // Memungkinkan pengguna melihat/menyembunyikan kata sandi
+        if (passwordField.type === 'password') {
+          passwordField.type = 'text';
+          toggleIcon.classList.remove('fa-eye-slash');
+          toggleIcon.classList.add('fa-eye');
+          console.log('Halo');
+        } else {
+          passwordField.type = 'password';
+          toggleIcon.classList.remove('fa-eye');
+          toggleIcon.classList.add('fa-eye-slash');
+        }
+      }
+
+
+  //Password di register
+    function togglePassword2() {
+        var passwordField = document.getElementById('password2');
+        var toggleIcon = document.getElementById('toggle-icon2');
         
         // Memungkinkan pengguna melihat/menyembunyikan kata sandi
         if (passwordField.type === 'password') {

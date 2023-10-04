@@ -44,7 +44,10 @@
               <form id='register' class='input-group-register'>
                 <input type='text'class='input-field'placeholder='Full Name' required>
                 <input type='email'class='input-field'placeholder='Email' required>
-                <input type='password'class='input-field'placeholder='Password' required>
+                <div class="toggle-password" >
+                  <input type='password' id="password2" class='input-field' placeholder='Password' required>
+                  <i id="toggle-icon2" class="fa fa-eye-slash" onclick="togglePassword2()"></i>
+                </div>
                 <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
                 <button type='submit'class='submit-btn'>Register</button>
               </form>
