@@ -1,25 +1,49 @@
-var x=document.getElementById('login');
-var y=document.getElementById('register');
-var z=document.getElementById('btn');
-
-function register()
-  {
-      x.style.left='-400px';
-      y.style.left='50px';
-      z.style.left='105px';
+function login() {
+    // Mengambil elemen formulir login dan registrasi
+    var loginForm = document.getElementById('login');
+    var registerForm = document.getElementById('register');
+    var btn = document.getElementById('btn');
+    
+    // Mengatur posisi formulir untuk tampilan login
+    loginForm.style.left = '50px';
+    registerForm.style.left = '450px';
+    btn.style.left = '0';
   }
-  function login()
-  {
-      x.style.left='50px';
-      y.style.left='450px';
-      z.style.left='0px';
+  
+  function register() {
+    // Mengambil elemen formulir login dan registrasi
+    var loginForm = document.getElementById('login');
+    var registerForm = document.getElementById('register');
+    var btn = document.getElementById('btn');
+    
+    // Mengatur posisi formulir untuk tampilan registrasi
+    loginForm.style.left = '-400px';
+    registerForm.style.left = '50px';
+    btn.style.left = '110px';
   }
+  
+  
 
-  var modal = document.getElementById('login-form');
-  window.onclick = function(event) 
-  {
-      if (event.target == modal) 
-      {
-          modal.style.display = "none";
+ 
+    function togglePassword() {
+        var passwordField = document.getElementById('password');
+        var toggleIcon = document.getElementById('toggle-icon');
+        
+        // Memungkinkan pengguna melihat/menyembunyikan kata sandi
+        if (passwordField.type === 'password') {
+          passwordField.type = 'text';
+          toggleIcon.classList.remove('fa-eye-slash');
+          toggleIcon.classList.add('fa-eye');
+          console.log('Halo');
+        } else {
+          passwordField.type = 'password';
+          toggleIcon.classList.remove('fa-eye');
+          toggleIcon.classList.add('fa-eye-slash');
+        }
       }
-  }
+      
+    
+  
+  
+ 
+  

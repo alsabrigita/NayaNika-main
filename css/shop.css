@@ -143,8 +143,18 @@ button i {
   text-decoration: none;
 }
 
+.card a{
+  text-decoration: none;
+  color: #000;
+}
+
+.card a:hover{
+  color: grey;
+}
+
 .card:hover{
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 .cardimg {
   max-width: 100%;
