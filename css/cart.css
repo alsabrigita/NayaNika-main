@@ -80,113 +80,7 @@ nav ul li a {
   font-weight: bold;
 }
 
-/*.carttable {
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
-
-.carttable table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  white-space: nowrap;
-}
-
-.prodimg {
-  width: 70px;
-}
-
-.carttable table td:nth-child(1) {
-  width: 150px;
-  text-align: center;
-}
-
-.carttable table td:nth-child(2) {
-  width: 250px;
-  text-align: center;
-}
-
-.carttable table td:nth-child(3),
-.carttable table td:nth-child(4),
-.carttable table td:nth-child(5) {
-  width: 150px;
-  text-align: center;
-}
-
-.carttable table td:nth-child(6) {
-  width: 100px;
-  text-align: center;
-}
-
-.carttable table td:nth-child(4) input {
-  width: 70px;
-  padding: 10px 5px 10px 15px;
-}
-
-.carttable table thead {
-  border: 1px solid rgb(4, 62, 112);
-  border-left: none;
-  border-right: none;
-}
-
-.carttable table thead td {
-  font-weight: 700;
-  text-decoration: uppercase;
-  font-size: 13px;
-  padding: 18px 0;
-}
-
-.carttable table tbody tr td {
-  padding-top: 18px;
-}*/
-
-/*.carttot {
-  display: flex;
-  justify-content: center;
-}
-.subtotal {
-  width: 30%;
-  margin-bottom: 30px;
-  border: 1px solid #e2e9e1;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.subtotal table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.subtotal table td {
-  width: 30%;
-  border: 1px solid #e2e9e1;
-  padding: 10px;
-  font-size: 13px;
-}
-
-.subtotal h3 {
-  padding-bottom: 20px;
-}
-
-.subtotal button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #05407e;
-  color: white;
-  cursor: pointer;
-}*/
-
-/*cart*/
-
-.main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
-    background-blend-mode: multiply;
-    background-size: cover;
-    padding-bottom: 30px;
-}
+/*CART*/
 
 .band-name {
     text-align: center;
@@ -201,11 +95,6 @@ nav ul li a {
     font-size: 8em;
 }
 
-.content-section {
-    margin: 1em;
-
-}
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -217,6 +106,7 @@ nav ul li a {
     color: #333;
     text-align: left;
     font-size: 3em;
+    margin-bottom: 100px;
 }
 
 .about-band-image {
@@ -262,51 +152,11 @@ nav ul li a {
     text-align: center;
 }
 
-.btn-primary {
-    color: white;
-    background-color: #56CCF2;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
+.button-item{
+
 }
 
-.btn-primary:hover {
-    background-color: #2D9CDB;
-}
-
-.tour-row {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-    border: none;
-}
-
-.tour-item {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    max-width: 19%;
-}
-.section-product h3{
+/*.section-product h3{
   font-size: 140%;
   font-weight: bold;
 }
@@ -314,51 +164,55 @@ nav ul li a {
 .section-product h2{
   font-size: 100%;
   font-weight: bold;
-}
+}*/
 
 .shop-item {
-    margin: 30px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 70%;
+    max-width: 60%;
 }
-.shop-item:first-child{
-  border-bottom: 1px solid lightgray
-}
-
 .shop-item-title {
-    display: block;
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-    vertical-align: inherit;
+  margin-left:220px;
+  margin-bottom: -25px;
+  list-style-type: none;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .shop-item-image {
   padding: 2px 6px 6px;
-  float: left;
-  width: 200px;
-  height: 150px;
+  max-width: 200px;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 10%;
 }
 
 .shop-item-details {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Mengatur elemen-elemen di tengah */
+  text-align: center; /* Mengatur teks horizontal ke tengah */
+  gap: 10px; /* Jarak antara elemen-elemen */}
 
 .shop-item-price {
-    flex-grow: 1;
+    flex-grow: 20px;
     color: #333;
 }
 
-.shop-items {
+/*.shop-item-button{
+  flex-shrink: 0;
+  display: flex;
+}*/
+
+/*.shop-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-}
+}*/
 
 .cart-header {
     font-weight: bold;
@@ -456,66 +310,47 @@ nav ul li a {
     font-size: 1.1em;
 }
 
-.btn-purchase {
-    display: block;
-    font-size: 1.75em;
-    float: right;
-    background-color: rgb(0, 0, 0);
-    margin-bottom: 10px;
-}
-
 .btn.btn-primary{
-  background-color: rgb(0, 0, 0);
-  display: sticky;
+  background-color: black;
+  display: inline-block;
   justify-items: right;
+  border-radius: 20em solid black;
+  position: relative;
+  margin-left: 85%;
+  width: 15%;
+  margin-top: 10px; /* Jarak atas */
+  margin-bottom: 10px; /* Jarak bawah */
+
 }
 
 footer {
   display: flex;
-    background-color: black;
-    color: white;
-    height: 80px;
-    justify-content: center;
-    padding-top: 20px;
-    box-sizing: border-box;
+  background-color: black;
+  color: white;
+  height: 80px;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
 footer p{
   font-family: 'Lato', sans-serif;
-  color: white;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
-@media(max-width: 800px)
-{
-    img
-    {
-        width: 20px;
-        margin-right: 0px;
-    }
-    h3, h4
-    {
-        font-size: 14px;
-    }
-    h2
-    {
-        font-size: 18px;
-    }
-    #container-fluid
-    {
-        padding: 90px 20px;
-    }
-}
-@media(max-width: 555px)
-{
-  #container-fluid
-    {
-        display: grid;
-        grid-template-columns: 1fr;
-    }    
-    #container-fluid
-    {
-        padding: 20px;
-        width: 80%;
-    }
+@media (max-width: 768px) {
+  .shop-item {
+      flex-direction: column; /* Mengatur tampilan vertikal pada layar kecil */
+  }
+  .shop-item-image{
+    padding-right: 50%;
+  }
+  
+  .item {
+      margin-bottom: 10px; /* Tambahkan jarak antar elemen pada layar kecil */
+  }
+  
+  .checkout-button {
+      width: 100%; /* Lebar tombol checkout 100% pada layar kecil */
+  }
 }
