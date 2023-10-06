@@ -12,42 +12,7 @@ body {
   background-color: white;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  align-items: center;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
 
-nav .logo {
-  font-family: Limelight;
-  font-size: 32px;
-  font-weight: bolder;
-  line-height: normal;
-}
-
-nav ul {
-  display: flex;
-  list-style: none; /* menghilangkan bullet pada nav*/
-  justify-content: flex-end; /* memberi jarak antar menu */
-  width: 40%;
-}
-
-nav ul li {
-  padding-right: 20px;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-}
-
-.active {
-  font-weight: bolder;
-}
 
 .hero {
   display: flex;
@@ -232,7 +197,7 @@ footer {
   }
 
   .bigherotext {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .smallherotext {
@@ -240,17 +205,15 @@ footer {
   }
 
   .search-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   #search {
-    width: 80%;
+    width: 50%;
   }
 
-  button {
-    margin-top: 10px;
-  }
 
   .product {
     padding: 40px 20px;
@@ -258,7 +221,7 @@ footer {
   }
 
   .card {
-    width: 50%;
+    width: 70%;
   }
 
   .cardimg img {

@@ -8,22 +8,33 @@
     <link rel="icon" type="image/icon" href="image/favicon.jpg">
     <link rel="stylesheet" href="css/homepage.css" />
     <link rel="stylesheet" href="css/profilepage.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,400;1,700&family=Titan+One&display=swap" rel="stylesheet">
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
+        <nav class="navbar">
             <!-- Logo -->
             <div class="logo">
               <p>NayaNika</p>
             </div>
       
             <!-- Menu -->
-            <ul>
-              <li><a class="active" href="homepage.html">Home</a></li>
+            <div>
+            <ul class="menu">
+              <li><a href="homepage.html">Home</a></li>
               <li><a  href="shop.html">Shop</a></li>
               <li><a href="about-us.html">About Us</a></li>
               <li>
@@ -33,6 +44,7 @@
                 <a href=""><img src="assets/img/profilelogo.png" alt="Company Logo" /></a>
               </li>
             </ul>
+            <i class="fa-solid fa-bars menu-bar"></i>
             </div>
           </nav>
     </header>
@@ -58,5 +70,8 @@
         <p>Group 2 - Tim A - Section Palembang RevoU</p>
     </footer>
     <script src="js/profile-page.js"></script>
+
+    <!-- link js -->
+    <script src="js/navbar.js"></script>
 </body>
 </html>
