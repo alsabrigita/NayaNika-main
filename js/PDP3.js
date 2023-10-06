@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Kirim produk ke keranjang belanja
         var product = {
-            name: 'Pembatas Buku Tenun',
-            price: 150000,
+            name: 'Tas Anyam',
+            price: 32000,
             quantity: quantity
         };
 
@@ -31,4 +31,3 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'cart.html';
     });
 });
-
