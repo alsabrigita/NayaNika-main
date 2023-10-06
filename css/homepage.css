@@ -264,19 +264,25 @@ footer p{
 
 .testimoni-parent{
   display: flex;
-  text-align: center;
-  justify-content: center;
   padding: 50px 100px;
-  column-gap: 30px;
+  column-gap: 0px;
+  margin-top: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   
 }
 
 .testimoni-items{
   border: 1px solid #ccc;
+  width: 20%;
   padding: 20px;
   border-radius: 10px;
   flex-direction: column;
-  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .testimoni-items:hover{
@@ -288,59 +294,122 @@ footer p{
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
-@media only screen and (min-width:50%) 
-{
-    .body
-    {
-      align-items: center;
-    }
-    #container
-    {
-        width: 95%;
-        grid-gap: 10px;
-    }
-    .nav{
-      grid-gap: 70px 20px ;
-    }
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  nav ul {
+    width: auto;
+    justify-content: space-around;
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+
+  .menu-bar {
+    display: block;
+    font-size: 24px;
+  }
+
+  header nav .menu{
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all 0.3 ease;
+    background-color:white;
+    opacity: 0;
 }
-@media(max-width: 100%)
-{
-    h1 
-    {
-        width: 80%;
-    }
-    #container
-    {
-        display: grid;
-        grid-gap: 70px 20px;
-        grid-template-columns: repeat(3, 1fr);
-        width: 80%;
-        align-items: center;
-    }    
-}
-@media(max-width: 100%)
-{
-    h1
-    {
-        font-size: 20px;
-    }
-    h1 
-    {
-        width: 90%;
-    }
-    #container
-    {
-        width: 90%;
-    }
-}
-@media(max-width: 100%)
-{
-    h1 
-    {
-        width: 70%;
-    }
-    #container
-    {
-        width: 70%;
-    }
+
+  header nav .menu.menu-active {
+    top: 60px;
+    opacity: 1;
+    /* border-top: 1px solid black; */
+  }
+
+  .heroleft {
+    padding: 0 20px;
+  }
+
+  .bigherotext {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .smallherotext {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .herobutton button {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+
+  .cardsection {
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .cardname, .cardprice {
+    font-size: 14px;
+  }
+
+  .viewallbutton button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
+  .topselling, .newarrival {
+    padding: 30px 20px;
+  }
+
+  .topsellingtext, .newarrivaltext, .testimonitext {
+    font-size: 36px;
+  }
+
+  .cardimg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimoni-items {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimoni-items div {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }

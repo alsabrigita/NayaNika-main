@@ -7,9 +7,11 @@
     <!--FAVICON-->
     <link rel="icon" type="image/icon" href="image/favicon.jpg">
     <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="css/homepage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,14 +29,15 @@
   <body>
     <!-- HEADER -->
     <header>
-        <nav>
+        <nav class="navbar">
             <!-- Logo -->
             <div class="logo">
               <p>NayaNika</p>
             </div>
       
             <!-- Menu -->
-            <ul>
+            <div>
+            <ul class="menu">
               <li><a class="active" href="homepage.html">Home</a></li>
               <li><a  href="shop.html">Shop</a></li>
               <li><a href="about-us.html">About Us</a></li>
@@ -45,6 +48,7 @@
                 <a href="Profile-page.html"><img src="assets/img/profilelogo.png" alt="Profile" /></a>
               </li>
             </ul>
+            <i class="fa-solid fa-bars menu-bar"></i>
             </div>
           </nav>
     </header>
@@ -300,7 +304,10 @@
     <footer>
         <div class="containerFooter">
         <p>Group 2 - Tim A - Section Palembang RevoU</p>
-    </footer>
         </div>
+    </footer>
+
+    <script src="js/homepage.js"></script>
+        
   </body>
 </html>

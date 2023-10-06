@@ -126,6 +126,7 @@ button i {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -136,10 +137,10 @@ button i {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* width: 220px;
-  height: 320px; */
-  /* align-items: center;
-  justify-content: center; */
+  /* width: 220px; */
+  /* height: 320px; */
+  /* align-items: center; */
+  /* justify-content: center; */
   transition: all 0.2s ease;
 }
 
@@ -203,4 +204,59 @@ footer {
   justify-content: center;
   padding-top: 20px;
   box-sizing: border-box;
+}
+
+/* Aturan umum di luar media query tetap sama */
+
+/* Media query untuk perangkat dengan lebar maksimum 768px (ukuran ponsel dan tablet) */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px 20px;
+  }
+
+  nav .logo {
+    font-size: 24px;
+  }
+
+  nav ul {
+    width: 60%;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .bigherotext {
+    font-size: 48px;
+  }
+
+  .smallherotext {
+    font-size: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search {
+    width: 80%;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .product {
+    padding: 40px 20px;
+    
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .cardimg img {
+    width: 100%;
+  }
 }
