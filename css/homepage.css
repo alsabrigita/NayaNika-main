@@ -288,59 +288,20 @@ footer p{
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
-@media only screen and (min-width:50%) 
-{
-    .body
-    {
-      align-items: center;
-    }
-    #container
-    {
-        width: 95%;
-        grid-gap: 10px;
-    }
-    .nav{
-      grid-gap: 70px 20px ;
-    }
-}
-@media(max-width: 100%)
-{
-    h1 
-    {
-        width: 80%;
-    }
-    #container
-    {
-        display: grid;
-        grid-gap: 70px 20px;
-        grid-template-columns: repeat(3, 1fr);
-        width: 80%;
-        align-items: center;
-    }    
-}
-@media(max-width: 100%)
-{
-    h1
-    {
-        font-size: 20px;
-    }
-    h1 
-    {
-        width: 90%;
-    }
-    #container
-    {
-        width: 90%;
-    }
-}
-@media(max-width: 100%)
-{
-    h1 
-    {
-        width: 70%;
-    }
-    #container
-    {
-        width: 70%;
-    }
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .body{
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 60px; /* Atur sesuai dengan kebutuhan Anda */
+  left: 0;
+  right: 0;
+  z-index: 1;
+  }
 }

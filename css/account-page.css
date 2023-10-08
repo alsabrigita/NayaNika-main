@@ -11,6 +11,17 @@ main{
 	padding-top: 8vh;
 }
 
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+	align-items: center;
+	padding: 20px 100px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 10px grey;
+  }
+
 
 /* LOGO */
 .logo p{
