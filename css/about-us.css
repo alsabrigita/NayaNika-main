@@ -12,6 +12,7 @@ body {
   overflow: auto;
   background-color: white;
 }
+<<<<<<< HEAD
 
 nav {
   display: flex;
@@ -52,6 +53,8 @@ nav ul li a {
   font-weight: bolder;
 }
 
+=======
+>>>>>>> c47e7831c9297132338f4f2d6ef76a30d205fdf2
 nav ul li a:hover{
     color: black;
 }

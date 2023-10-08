@@ -27,7 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('cart', JSON.stringify(cart));
 
         alert('Produk ditambahkan ke keranjang belanja.');
-        // Arahkan pengguna ke halaman keranjang
-        window.location.href = 'cart.html';
     });
 });

@@ -12,42 +12,7 @@ body {
   background-color: white;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  align-items: center;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
 
-nav .logo {
-  font-family: Limelight;
-  font-size: 32px;
-  font-weight: bolder;
-  line-height: normal;
-}
-
-nav ul {
-  display: flex;
-  list-style: none; /* menghilangkan bullet pada nav*/
-  justify-content: flex-end; /* memberi jarak antar menu */
-  width: 40%;
-}
-
-nav ul li {
-  padding-right: 20px;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-}
-
-.active {
-  font-weight: bolder;
-}
 
 .hero {
   display: flex;
@@ -125,6 +90,7 @@ button i {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -135,10 +101,10 @@ button i {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* width: 220px;
-  height: 320px; */
-  /* align-items: center;
-  justify-content: center; */
+  /* width: 220px; */
+  /* height: 320px; */
+  /* align-items: center; */
+  /* justify-content: center; */
   transition: all 0.2s ease;
   text-decoration: none;
 }
@@ -208,4 +174,57 @@ footer {
   justify-content: center;
   padding-top: 20px;
   box-sizing: border-box;
+}
+
+/* Aturan umum di luar media query tetap sama */
+
+/* Media query untuk perangkat dengan lebar maksimum 768px (ukuran ponsel dan tablet) */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px 20px;
+  }
+
+  nav .logo {
+    font-size: 24px;
+  }
+
+  nav ul {
+    width: 60%;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .bigherotext {
+    font-size: 40px;
+  }
+
+  .smallherotext {
+    font-size: 20px;
+  }
+
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #search {
+    width: 50%;
+  }
+
+
+  .product {
+    padding: 40px 20px;
+    
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .cardimg img {
+    width: 100%;
+  }
 }

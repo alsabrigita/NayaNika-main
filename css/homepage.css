@@ -12,44 +12,7 @@ body {
   background-color: white;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  align-items: center;
-  padding: 20px 100px;
-  box-sizing: border-box;
-}
 
-nav .logo {
-  font-family: Limelight;
-  font-size: 32px;
-  font-weight: bolder;
-  line-height: normal;
-}
-
-nav ul {
-  display: flex;
-  list-style: none; /* menghilangkan bullet pada nav*/
-  justify-content: flex-end; /* memberi jarak antar menu */
-  width: 40%;
-}
-
-nav ul li {
-  padding-right: 20px;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-}
-
-.active {
-  font-weight: bolder;
-  display: grid;
-  grid-template-columns: repeat(auto-fit), minmax(50%, 100%);
-}
 
 .hero {
   display: flex;
@@ -162,6 +125,11 @@ nav ul li a {
   transition: all 0.2s ease;
 }
 
+
+.card a{
+  text-decoration: none;
+  color: black;
+}
 .card:hover{
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
 }
@@ -264,19 +232,25 @@ footer p{
 
 .testimoni-parent{
   display: flex;
-  text-align: center;
-  justify-content: center;
   padding: 50px 100px;
-  column-gap: 30px;
+  column-gap: 0px;
+  margin-top: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   
 }
 
 .testimoni-items{
   border: 1px solid #ccc;
+  width: 20%;
   padding: 20px;
   border-radius: 10px;
   flex-direction: column;
-  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .testimoni-items:hover{
@@ -287,21 +261,72 @@ footer p{
 
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
+  @media screen and (max-width: 768px) {
 
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: none;
+    .heroleft {
+      padding: 0 20px;
+    }
+  
+    .bigherotext {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+  
+    .smallherotext {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  
+    .herobutton button {
+      font-size: 14px;
+      padding: 8px 24px;
+    }
+  
+    .cardsection {
+      justify-content: space-around;
+    }
+  
+    .card {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  
+    .cardname, .cardprice {
+      font-size: 14px;
+    }
+  
+    .viewallbutton button {
+      font-size: 14px;
+      padding: 10px 30px;
+    }
+  
+    .topselling, .newarrival {
+      padding: 30px 20px;
+    }
+  
+    .topsellingtext, .newarrivaltext, .testimonitext {
+      font-size: 36px;
+    }
+  
+    .cardimg img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .testimoni-items {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .testimoni-items div {
+      margin-bottom: 10px;
+    }
+  
+    footer {
+      padding: 10px 20px;
+    }
+  
+    footer p {
+      font-size: 14px;
+    }
   }
-  .hamburger {
-    display: block;
-  }
-  .body{
-  display: block;
-  background-color: white;
-  position: absolute;
-  top: 60px; /* Atur sesuai dengan kebutuhan Anda */
-  left: 0;
-  right: 0;
-  z-index: 1;
-  }
-}
