@@ -176,8 +176,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* Aturan umum di luar media query tetap sama */
-
 /* Media query untuk perangkat dengan lebar maksimum 768px (ukuran ponsel dan tablet) */
 @media screen and (max-width: 768px) {
   nav {
@@ -221,7 +219,7 @@ footer {
   }
 
   .card {
-    width: 70%;
+    width: 50%;
   }
 
   .cardimg img {

@@ -36,8 +36,8 @@ nav {
 /* LOGIN DAN REGISTER FORM */
 .login-page{
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-wrap: wrap;
+	height: 100vh;
 }
 
 .form-box
@@ -47,11 +47,13 @@ nav {
 	position:relative;
 	margin:2% auto;
 	background-color: white;
-	padding:10px;
     overflow: hidden;
     border:0;
 	border-radius: 20px;
 	box-shadow: 0 0 3px 1px #777;
+	margin-bottom: 5%;
+	align-items: center;
+	justify-content: center;
 }
 
 .button-box
@@ -213,8 +215,8 @@ footer {
 	color: white;
 	height: 80px;
 	justify-content: center;
+	padding-top: 20px;
 	box-sizing: border-box;
-	align-items: center;
   }
   
   footer p{

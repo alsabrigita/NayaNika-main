@@ -231,13 +231,11 @@ footer p{
 }
 
 .testimoni-parent{
-  display: flex;
-  padding: 50px 100px;
-  column-gap: 0px;
-  margin-top: 51px;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 20px;
   align-items: center;
   flex-wrap: wrap;
   
@@ -262,23 +260,24 @@ footer p{
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
   @media screen and (max-width: 768px) {
-
+    
     .heroleft {
-      padding: 0 20px;
+      padding: 20px;
+      width: 100%;
     }
   
     .bigherotext {
-      font-size: 36px;
+      font-size: 30px;
       line-height: 1.2;
     }
   
     .smallherotext {
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.6;
     }
   
     .herobutton button {
-      font-size: 14px;
+      font-size: 13px;
       padding: 8px 24px;
     }
   
@@ -287,7 +286,7 @@ footer p{
     }
   
     .card {
-      width: 50%;
+      width: 80%;
       margin-bottom: 20px;
     }
   
@@ -312,14 +311,25 @@ footer p{
       width: 100%;
       height: auto;
     }
-  
-    .testimoni-items {
-      width: 100%;
-      margin-bottom: 20px;
+
+    .testimonitext h1{
+      font-size: 50px;
     }
   
-    .testimoni-items div {
+    .testimoni-items {
+      width: 80%;
+      margin-bottom: 20px;
+      align-items: center;
+  
+    }
+
+    .testimoni-items stars{
+      width: 50%;
+    }
+  
+    .testimoni-items p{
       margin-bottom: 10px;
+      font-size: 3vw;
     }
   
     footer {
